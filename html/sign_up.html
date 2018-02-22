@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">{Generic}</a>
+        <a class="navbar-brand" href="../index.html">{Generic}</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerE" aria-controls="navbarTogglerE" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,7 +32,7 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="align-self-center col-10">
                 <form>
                     <div class="form-group">
@@ -41,10 +41,23 @@
                         <small id="emailHelp" class="form-text text-muted">We {mostly} promise not to blow up your inbox.</small>
                     </div>
                     <div class="form-group">
+                        <label for="user-name">Name</label>
+                        <input type="text" class="form-control" id="user-name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-phone">Phone</label>
+                        <input type="text" class="form-control" id="user-phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
                         <label for="user-passwd">Password</label>
                         <input type="password" class="form-control" id="user-passwd" aria-describedby="passwordHelp" placeholder="Password">
                         <small id="passwordHelp" class="form-text text-muted">Passwords must have at least on special character.</small>
                     </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="user-subbed">
+                        <label class="form-check-label" for="user-subbed">Allow us to email you with special promotions?</label>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Submit</button>
                 </form>
             </div>
         </div>
