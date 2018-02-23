@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, sans-serif;
+}
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    padding-bottom: 5px;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.trailer {
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: right;
+}
+.trailer a {
+    color: white;
+}
+div.trailer::before {
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 6px;
+    color:white;
+    font-size: 25px;
+    vertical-align: middle;
+    content: "\f144";
+}
+.play {
+    color: white;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    text-align: left;
+}
+.text {
+    color: white;
+    font-size: 35px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+  }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color:white;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    position: relative;
+    background-color: #bbb;
+    border-radius: 70%;
+    display: inline-block;
+    bottom: 30px;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 6s;
+}
+@-webkit-keyframes fade {
+    from {opacity: 1} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 1} 
+    to {opacity: 1}
+}
+.movie-poster {
+    margin: 0 auto;
+}
+.movie-poster img {
+    display: block;
+    width: 10%;
+    height: 10%;
+}
+#movie-grid ul {
+    list-style-type: none;
+}
+.movie-title {
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+.movie-time {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+button, .button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0;
+    cursor: pointer;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    margin: 2 2 2 2;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.625rem 1.25rem 0.6875rem 1.25rem;
+    font-size: 1rem;
+    background-color: black;
+    color: #ffffff;
+    transition: background-color 300ms ease-out;
+  }
+button.tiny, .button.tiny {
+    padding: 0.3125rem 0.625rem 0.375rem 0.625rem;
+    font-size: 0.8rem;
+}
+
+
