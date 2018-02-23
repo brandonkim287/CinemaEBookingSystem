@@ -116,8 +116,8 @@ div.trailer::before {
 }
 .movie-poster img {
     display: block;
-    width: 10%;
-    height: 10%;
+    width: 90%;
+    height: 90%;
 }
 #movie-grid ul {
     list-style-type: none;

@@ -27,8 +27,32 @@
                 <li class="nav-item">
                     <a class="nav-link" href="sign-up.html">Sign up</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sign-in.html">Sign In</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign-In
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                            </div>
+                            <!--<div class="form-check">-->
+                            <!--<input type="checkbox" class="form-check-input" id="dropdownCheck">-->
+                            <!--<label class="form-check-label" for="dropdownCheck">-->
+                            <!--Remember me-->
+                            <!--</label>-->
+                            <!--</div>-->
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="html/sign_up.html">New to {Generic}? Sign up</a>
+                        <a class="dropdown-item" href="html/forgot_passwd.html">Forgot password?</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Check-out</a>
@@ -70,10 +94,12 @@
         </div>
     </div>
 
-    <div id="movie-grid" class="with-info with-times">
-        <ul class="large-block-grid">
-            <li>
-                <div class="movie-poster"><a href="#"><img src="img/sm-blackpanther.jpg"></a></div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="fluid-image"><a href="#"><img src="img/sm-blackpanther.jpg"></a></div>
                 <div class="movie-info">
                     <h1 class="movie-title">Black Panther</h1>
                     <ul class="movie-times">
@@ -83,9 +109,9 @@
                         <li><a href="#" class="button tiny">7 P.M.</a></li>
                     </ul>
                 </div>
-            </li>
-            <li>
-                <div class="movie-poster"><a href="#"><img src="img/sm-annihilation.jpg"></a></div>
+            </div>
+            <div class = col>
+                <div class="fluid-image "><a href="#"><img src="img/sm-annihilation.jpg"></a></div>
                 <div class="movie-info">
                     <h1 class="movie-title">Annihilation</h1>
                     <ul class="movie-times">
@@ -95,21 +121,24 @@
                         <li><a href="#" class="button tiny">5 P.M.</a></li>
                     </ul>
                 </div>
-            </li>
-            <li>
-                <div class="movie-poster"><a href="#"><img src="img/sm-jumanji.jpg"></a></div>
+            </div>
+            <div class="col">
+                <div class="fluid-image "><a href="#"><img src="img/sm-annihilation.jpg"></a></div>
                 <div class="movie-info">
-                    <h1 class="movie-title">Jumanji</h1>
+                    <h1 class="movie-title">Annihilation</h1>
                     <ul class="movie-times">
+                        <li><a href="#" class="button tiny">9 A.M.</a></li>
                         <li><a href="#" class="button tiny">12 P.M.</a></li>
                         <li><a href="#" class="button tiny">2 P.M.</a></li>
-                        <li><a href="#" class="button tiny">4 P.M.</a></li>
-                        <li><a href="#" class="button tiny">6 P.M.</a></li>
+                        <li><a href="#" class="button tiny">5 P.M.</a></li>
                     </ul>
                 </div>
-            </li>
-        </ul>
+        </div>
+        </div>
     </div>
+
+
+
     <footer class="container-fluid text-center">
         <p>2018 Software Engineering Group</p>
     </footer>
