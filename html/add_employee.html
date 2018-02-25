@@ -2,17 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Add Employee</title>
+
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <!--Jquery UI-->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-
-    <script src="js/showtime_adder.js"></script>
-    <title>Administrator Tools</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -63,9 +60,9 @@
             <div class="col-lg self-align-center">
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
-                        <li class="page-item active"><a class="page-link" href="#">Add Movie</a></li>
-                        <li class="page-item"><a class="page-link" href="html/remove_movie.html">Remove Movie</a></li>
-                        <li class="page-item"><a class="page-link" href="html/add_employee.html">Add Employee</a></li>
+                        <li class="page-item"><a class="page-link" href="../admin.html">Add Movie</a></li>
+                        <li class="page-item"><a class="page-link" href="remove_movie.html">Remove Movie</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">Add Employee</a></li>
                         <li class="page-item"><a class="page-link" href="#">Remove Employee</a></li>
                         <li class="page-item"><a class="page-link" href="#">Add Promotion</a></li>
                         <li class="page-item"><a class="page-link" href="#">Remove Promotion</a></li>
@@ -76,54 +73,24 @@
         <div class="row">
             <div class="col-lg self-align-center">
                 <form>
-                    <div class="form-row">
-                        <div class="form-group col-md-8">
-                            <label for="movieTitle">Title</label>
-                            <input type="text" class="form-control" id="movieTitle" placeholder="Title"/>
-                        </div>
-                        <div class="form-group col-mid-4">
-                            <label for="movieRating">Rating</label>
-                            <input type="text" class="form-control" id="movieRating" placeholder="G/PG/PG-13/R/NC-17"/>
-                        </div>
+                    <div class="form-group">
+                        <label for="user-email">Employee Email Address</label>
+                        <input type="email" class="form-control" id="user-email" placeholder="New Employee Email">
+
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="movieDirector">Director</label>
-                            <input type="text" class="form-control" id="movieDirector" placeholder="Director"/>
-                        </div>
-                        <div class="form-gorup col-md-6">
-                            <label for="movieTrailer">Trailer Link</label>
-                            <input type="url" class="form-control" id="movieTrailer" placeholder="Link to Trailer"/>
-                        </div>
+                    <div class="form-group">
+                        <label for="user-name">Name</label>
+                        <input type="text" class="form-control" id="user-name" placeholder="Employee Name">
                     </div>
-                    <div class="form-row">
-                        <label for="movieCast">Cast</label>
-                        <input type="text" class="form-control" id="movieCast" placeholder="Cast (comma separated)"/>
+                    <div class="form-group">
+                        <label for="user-phone">Phone</label>
+                        <input type="text" class="form-control" id="user-phone" placeholder="Employee Phone Number">
                     </div>
-                    <div class="form-row">
-                        <label for="movieSynopsis">Synopsis</label>
-                        <textarea class="form-control" rows="5" id="movieSynopsis" placeholder="Short movie synopsis..."></textarea>
+                    <div class="form-group">
+                        <label for="user-passwd">Password</label>
+                        <input type="password" class="form-control" id="user-passwd" aria-describedby="passwordHelp" placeholder="Employee Password">
                     </div>
-                    <div class="form-row">
-                        <label for="movieReviews">Reviews</label>
-                        <textarea class="form-control" rows="5" id="movieReviews" placeholder="Reviews (comma separated)"></textarea>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-gorup col-md-8">
-                            <label for="movieShowtimes">Showtimes</label>
-                            <textarea class="form-control" rows="5" id="movieShowtimes"></textarea>
-                        </div>
-                        <div class="form-goupr date col-md-2">
-                            <label for="date">Date</label>
-                            <input type="text" class="form-control" id="date"/>
-                        </div>
-                        <div class="form-goupr date col-md-2">
-                            <label for="time">Time</label>
-                            <input type="time" class="form-control" id="time"/>
-                            <button type="button" class="btn btn-secondary" onclick="appendShowtime()">Add Showtime</button>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary mt-2">Add Movie</button>
+                    <button type="submit" class="btn btn-secondary">Add Employee</button>
                 </form>
             </div>
         </div>
