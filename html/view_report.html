@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Remove Promotion</title>
+    <title>View Reports</title>
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -65,25 +65,31 @@
                         <li class="page-item"><a class="page-link" href="add_employee.html">Add Employee</a></li>
                         <li class="page-item"><a class="page-link" href="remove_employee.html">Remove Employee</a></li>
                         <li class="page-item"><a class="page-link" href="add_promo.html">Add Promotion</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">Remove Promotion</a></li>
-                        <li class="page-item"><a class="page-link" href="view_report.html">View Report</a></li>
+                        <li class="page-item"><a class="page-link" href="remove_promo.html">Remove Promotion</a></li>
+                        <li class="page-item active"><a class="page-link" href="view_report.html">View Report</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg self-align-center">
-                <form>
-                    <div class="form-group">
-                        <label for="promoList">Select an promotion to remove:</label>
-                        <select id="promoList" class="form-control">
-                            <option>HALFOFF</option>
-                            <option>SOMEOTHERPROMO</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary mt-2">Remove Promotion</button>
-                </form>
-            </div>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Tickets Sold</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Black Panther</th>
+                        <td>700</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Annihilation</th>
+                        <td>300</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
