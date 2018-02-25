@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Add Employee</title>
+    <title>Add Promotion</title>
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -10,6 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!--jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" >
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -62,9 +65,9 @@
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="../admin.html">Add Movie</a></li>
                         <li class="page-item"><a class="page-link" href="remove_movie.html">Remove Movie</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">Add Employee</a></li>
+                        <li class="page-item"><a class="page-link" href="add_employee.html">Add Employee</a></li>
                         <li class="page-item"><a class="page-link" href="remove_employee.html">Remove Employee</a></li>
-                        <li class="page-item"><a class="page-link" href="add_promo.html">Add Promotion</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">Add Promotion</a></li>
                         <li class="page-item"><a class="page-link" href="#">Remove Promotion</a></li>
                     </ul>
                 </nav>
@@ -74,23 +77,32 @@
             <div class="col-lg self-align-center">
                 <form>
                     <div class="form-group">
-                        <label for="user-email">Employee Email Address</label>
-                        <input type="email" class="form-control" id="user-email" placeholder="New Employee Email">
-
+                        <label for="promoCode">Promotion Code:</label>
+                        <input type="text" class="form-control" id="promoCode" placeholder="Promo Code ie. (HALFOFF)">
                     </div>
                     <div class="form-group">
-                        <label for="user-name">Name</label>
-                        <input type="text" class="form-control" id="user-name" placeholder="Employee Name">
+                        <label for="movieList">Choose a Movie:</label>
+                        <select class="form-control" id="movieList">
+                            <option>All Movies</option>
+                            <option>Black Panther</option>
+                            <option>Annihilation</option>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <label for="user-phone">Phone</label>
-                        <input type="text" class="form-control" id="user-phone" placeholder="Employee Phone Number">
+                        <label for="discount">Discount Percent (%)</label>
+                        <input type="number" class="form-control" id="discount" placeholder="0-100">
                     </div>
                     <div class="form-group">
-                        <label for="user-passwd">Password</label>
-                        <input type="password" class="form-control" id="user-passwd" aria-describedby="passwordHelp" placeholder="Employee Password">
+                        <label for="expDate">Expiration Date</label>
+                        <input type="text" class="form-control" id="expDate"/>
+                        <script>
+                            // enables jquery datepicker
+                            $( function() {
+                                $( "#expDate").datepicker()
+                            });
+                        </script>
                     </div>
-                    <button type="submit" class="btn btn-secondary">Add Employee</button>
+                    <button type="submit" class="btn btn-secondary">Add Promotion</button>
                 </form>
             </div>
         </div>
