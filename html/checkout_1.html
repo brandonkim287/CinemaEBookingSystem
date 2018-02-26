@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../E-Book.html">Cinema E-Booking</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerE" aria-controls="navbarTogglerE" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerE">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link navbar-right" href="sign_up.html">Sign up</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign-In
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" >
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                            </div>
+                            <!--<div class="form-check">-->
+                            <!--<input type="checkbox" class="form-check-input" id="dropdownCheck">-->
+                            <!--<label class="form-check-label" for="dropdownCheck">-->
+                            <!--Remember me-->
+                            <!--</label>-->
+                            <!--</div>-->
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="sign_up.html">New to {Generic}? Sign up</a>
+                        <a class="dropdown-item" href="forgot_passwd.html">Forgot password?</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Check-out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col mt-3">
+                <label for="cart"><b>Your Cart:</b></label>
+                <table id="cart" class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Movie</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Seat (Row, Col)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Black Panther</td>
+                        <td>A</td>
+                        <td>$10</td>
+                        <td>(5,5)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Black Panther</td>
+                        <td>A</td>
+                        <td>$10</td>
+                        <td>(5,6)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td><b>Subtotal:</b></td>
+                        <td>$16.00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td><b>Tax:</b></td>
+                        <td>$2.40</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td><b>Total:</b></td>
+                        <td>$18.40</td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="name">Name on Card:</label>
+                            <input type="text" id="name" class="form-control"/>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-gorup col-12">
+                            <label for="ccn">Card Number:</label>
+                            <input type="text" id="ccn" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-gorup col-4">
+                            <label for="expDateMonth">Expiration Date:</label>
+                            <select id="expDateMonth" class="form-control">
+                                <option value="01">January</option>
+                                <option value="02">February </option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="expDateYear" class="text-white">Expiration Date:</label>
+                            <select id="expDateYear" class="form-control">
+                                <option value="18"> 2018</option>
+                                <option value="19"> 2019</option>
+                                <option value="20"> 2020</option>
+                                <option value="21"> 2021</option>
+                                <option value="22"> 2022</option>
+                                <option value="23"> 2023</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" onclick="location.href='checkout_2.html'" class="btn btn-primary">Confirm Purchase</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
