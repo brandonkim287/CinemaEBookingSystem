@@ -17,7 +17,7 @@ function addItem(){
 		let table = document.getElementById('cart')
 		let row = table.insertRow(i)
 		let seatText = selected[i].textContent;
-		let showtimeText = $('#showtimeText').find(":selected").text();
+		let showtimeText = $('#showtime').find(":selected").text();
 
 		let movie =row.insertCell(0)
 		let showtime = row.insertCell(1)
@@ -32,9 +32,6 @@ function addItem(){
 	}
 }
 
-// function clearSelected(){
-// 	let table = document.getElementById('cart')
-// 	for(let i =0; i<=table.rows.length; i++){
-// 		table.deleteRow(i)
-// 	}
-// }
+function clearSelected(){
+	$('#cart').empty()
+}
