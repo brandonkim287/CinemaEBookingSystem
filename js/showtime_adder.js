@@ -14,3 +14,7 @@ function appendShowtime(){
     }
 }
 
+funciton addItem(){
+	alert('hit')
+}
+
