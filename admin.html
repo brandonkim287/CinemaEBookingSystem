@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!--Jquery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" >
+
+    <script src="js/showtime_adder.js"></script>
+    <title>Administrator Tools</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="E-Book.html">Cinema E-Booking</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerE" aria-controls="navbarTogglerE" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerE">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link navbar-right" href="html/sign_up.html">Sign up</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign-In
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" >
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                            </div>
+                            <!--<div class="form-check">-->
+                            <!--<input type="checkbox" class="form-check-input" id="dropdownCheck">-->
+                            <!--<label class="form-check-label" for="dropdownCheck">-->
+                            <!--Remember me-->
+                            <!--</label>-->
+                            <!--</div>-->
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="html/sign_up.html">New to {Generic}? Sign up</a>
+                        <a class="dropdown-item" href="html/forgot_passwd.html">Forgot password?</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/checkout_1.html">Check-out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg self-align-center">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item active"><a class="page-link" href="#">Add Movie</a></li>
+                        <li class="page-item"><a class="page-link" href="html/remove_movie.html">Remove Movie</a></li>
+                        <li class="page-item"><a class="page-link" href="html/add_employee.html">Add Employee</a></li>
+                        <li class="page-item"><a class="page-link" href="html/remove_employee.html">Remove Employee</a></li>
+                        <li class="page-item"><a class="page-link" href="html/add_promo.html">Add Promotion</a></li>
+                        <li class="page-item"><a class="page-link" href="html/remove_promo.html">Remove Promotion</a></li>
+                        <li class="page-item"><a class="page-link" href="html/view_report.html">View Report</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg self-align-center">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="movieTitle">Title</label>
+                            <input type="text" class="form-control" id="movieTitle" placeholder="Title"/>
+                        </div>
+                        <div class="form-group col-mid-4">
+                            <label for="movieRating">Rating</label>
+                            <select id="movieRating" class="form-control">
+                                <option>G</option>
+                                <option>PG</option>
+                                <option>PG-13</option>
+                                <option>R</option>
+                                <option>NC-17</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="movieDirector">Director</label>
+                            <input type="text" class="form-control" id="movieDirector" placeholder="Director"/>
+                        </div>
+                        <div class="form-gorup col-md-6">
+                            <label for="movieTrailer">Trailer Link</label>
+                            <input type="url" class="form-control" id="movieTrailer" placeholder="Link to Trailer"/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="movieCast">Cast</label>
+                        <input type="text" class="form-control" id="movieCast" placeholder="Cast (comma separated)"/>
+                    </div>
+                    <div class="form-row">
+                        <label for="movieSynopsis">Synopsis</label>
+                        <textarea class="form-control" rows="5" id="movieSynopsis" placeholder="Short movie synopsis..."></textarea>
+                    </div>
+                    <div class="form-row">
+                        <label for="movieReviews">Reviews</label>
+                        <textarea class="form-control" rows="5" id="movieReviews" placeholder="Reviews (comma separated)"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-gorup col-md-8">
+                            <label for="movieShowtimes">Showtimes</label>
+                            <textarea class="form-control" rows="5" id="movieShowtimes"></textarea>
+                        </div>
+                        <div class="form-goupr date col-md-2">
+                            <label for="date">Date</label>
+                            <input type="text" class="form-control" id="date"/>
+                        </div>
+                        <div class="form-goupr date col-md-2">
+                            <label for="time">Time</label>
+                            <input type="time" class="form-control" id="time"/>
+                            <button type="button" class="btn btn-secondary" onclick="appendShowtime()">Add Showtime</button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Add Movie</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

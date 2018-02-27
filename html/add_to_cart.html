@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add to Cart</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!--Jquery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" >
+
+    <script src="../js/seat_picker.js"></script>
+    <link rel="stylesheet" href="../css/add_to_cart.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../E-Book.html">Cinema E-Booking</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerE" aria-controls="navbarTogglerE" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerE">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+            <li class="nav-item">
+                <a class="nav-link navbar-right" href="sign_up.html">Sign up</a>
+            </li>
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sign-In
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" >
+                    <form class="px-4 py-3">
+                        <div class="form-group">
+                            <label for="exampleDropdownFormEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleDropdownFormPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                        </div>
+                        <!--<div class="form-check">-->
+                        <!--<input type="checkbox" class="form-check-input" id="dropdownCheck">-->
+                        <!--<label class="form-check-label" for="dropdownCheck">-->
+                        <!--Remember me-->
+                        <!--</label>-->
+                        <!--</div>-->
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="sign_up.html">New to {Generic}? Sign up</a>
+                    <a class="dropdown-item" href="forgot_passwd.html">Forgot password?</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Check-out</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-weight-bold text">Annihilation</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <ol id="selectable">
+                    <li class="ui-state-default">1</li>
+                    <li class="ui-state-default">2</li>
+                    <li class="ui-state-default">3</li>
+                    <li class="ui-state-default reserved">4</li>
+                    <li class="ui-state-default">5</li>
+                    <li class="ui-state-default">6</li>
+                    <li class="ui-state-default">7</li>
+                    <li class="ui-state-default">8</li>
+                    <li class="ui-state-default">9</li>
+                    <li class="ui-state-default">10</li>
+                    <li class="ui-state-default">11</li>
+                    <li class="ui-state-default">12</li>
+                    <li class="ui-state-default">13</li>
+                    <li class="ui-state-default">14</li>
+                    <li class="ui-state-default">15</li>
+                    <li class="ui-state-default">16</li>
+                    <li class="ui-state-default">17</li>
+                    <li class="ui-state-default">18</li>
+                    <li class="ui-state-default">19</li>
+                    <li class="ui-state-default">20</li>
+                    <li class="ui-state-default reserved">21</li>
+                    <li class="ui-state-default">22</li>
+                    <li class="ui-state-default">23</li>
+                    <li class="ui-state-default">24</li>
+                    <li class="ui-state-default">25</li>
+                    <li class="ui-state-default">26</li>
+                    <li class="ui-state-default">27</li>
+                    <li class="ui-state-default">28</li>
+                    <li class="ui-state-default">29</li>
+                    <li class="ui-state-default">30</li>
+                    <li class="ui-state-default">31</li>
+                    <li class="ui-state-default">32</li>
+                    <li class="ui-state-default">33</li>
+                    <li class="ui-state-default">34</li>
+                    <li class="ui-state-default">35</li>
+                    <li class="ui-state-default">36</li>
+                    <li class="ui-state-default">37</li>
+                    <li class="ui-state-default">38</li>
+                    <li class="ui-state-default">39</li>
+                    <li class="ui-state-default">40</li>
+                </ol>
+            </div>
+            <div class="col-md-4">
+                <label for="showtime">Select a showtime:</label>
+                <select class="form-control" id="showtime">
+                    <option selected>2/30 12:00</option>
+                    <option>2/31 12:00</option>
+                    <option>2/32 12:00</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-secondary" type="button" onclick="addItem()">Add Seats to Cart</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Movie</th>
+                        <th scope="col">Showtime</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Seat</th>
+                    </tr>
+                    </thead>
+                    <tbody id="cart">
+                        <!--addItem() adds table rows to this table-->
+                    </tbody>
+                </table>
+               <div class="row">
+                   <div class="col">
+                       <button class="btn btn-primary" type="button">Add to Cart</button>
+                   </div>
+                   <div class="col">
+                       <button class="btn btn-secondary" type="button" onclick="clearSelected()">Clear</button>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
