@@ -59,12 +59,12 @@
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>     
-        
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
         <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
 
@@ -73,7 +73,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="fluid-image"><a href="html/BlackPanther.html"><img src="img/sm-blackpanther.jpg"></a></div>
+                <div class="fluid-image"><a href="html/movie_info.html"><img src="img/sm-blackpanther.jpg"></a></div>
                 <div class="movie-info">
                     <h1 class="movie-title">Black Panther</h1>
                     <ul class="movie-times">
@@ -126,14 +126,14 @@
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
         for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+        slides[i].style.display = "none";
         }
         slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
+        if (slideIndex > slides.length) {slideIndex = 1}
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";  
+        slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         setTimeout(showSlides, 6000);
     }
