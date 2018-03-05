@@ -1,0 +1,22 @@
+body{
+  background-color: white
+}
+h1{
+  color: white;
+  text-align: center;
+}
+h2{
+  color: Black;
+}
+.movie-title{
+  text-align: center;
+}
+.promoCode{
+  border: 3px dotted #bbb;
+  max-width: 18em;
+}
+.promo{
+  background: #ccc;
+  padding: 3px;
+  text-align: center;
+}
