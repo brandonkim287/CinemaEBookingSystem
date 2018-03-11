@@ -160,5 +160,29 @@ button.tiny, .button.tiny {
 footer {
     padding-top: 50px;
 }
+hmovie {
+    font-size: 30px;
+    margin-top: 
+}
+.row{
+    margin-bottom: 35px;
+    margin-left: 10px;
+    width: 95%;
+}
+.col-sm-3 {
+    text-align: center;
+}
+.browse img {
+    height: 300px;
+    width: 200px;
+}
+.col-sm-4 {
+    text-align: center;    
+}
+.main img {
+    height: 350px;
+    width: 250px;
+}
+
 
 
