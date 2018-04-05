@@ -3,6 +3,7 @@ public class User{
     protected int id;
     protected String email, password, firstName, lastName,
             phoneNumber, address;
+    protected boolean subscribed;
 
     public int getId() {
         return id;
@@ -59,5 +60,12 @@ public class User{
     public void setAddress(String address) {
         this.address = address;
     }
-}
 
+    public boolean getSubscription() {
+      return subscribed;
+    }
+
+    public void setSubscription(boolean subscription) {
+      this.subscribed = subscription;
+    }
+}
